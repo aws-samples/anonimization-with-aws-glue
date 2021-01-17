@@ -16,6 +16,15 @@ args = getResolvedOptions(sys.argv, ['JOB_NAME'])
 ## TODO: substituir pelo caminho do seu bucket
 s3_output_path = "s3://<<caminho onde o arquivo final será armazenado>>"
 
+## Database do Glue Data Catalog com dados da Origem
+## TODO: substituir pelo seu database
+glue_database = "<<seu database com os dados de origem no glue data catalog>>"
+
+## Tabela do Glue Data Catalog com dados da Origem
+## TODO: substituir por sua tabela
+glue_table_name = "<<sua tabela com os dados de origem no glue data catalog>>"
+
+
 
 sc = SparkContext.getOrCreate()
 glueContext = GlueContext(sc)
@@ -23,10 +32,10 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 ## @type: DataSource
-## @args: [database = "pep-original", table_name = "paciente"]
+## @args: [database = glue_database, table_name = glue_table_name]
 ## @return: datasource
 ## @inputs: []
-datasource = glueContext.create_dynamic_frame.from_catalog(database = "pep-original", table_name = "paciente")
+datasource = glueContext.create_dynamic_frame.from_catalog(database = glue_database, table_name = glue_table_name)
 ## @type: ApplyMapping
 ## @args: [mapping = [("nome", "string", "nome", "string"), ("cpf", "string", "cpf", "string"), ("email", "string", "email", "string"), ("cep", "string", "cep", "string"), ("rua", "string", "rua", "string"), ("numero", "long", "numero", "long"), ("cidade", "string", "cidade", "string"), ("estado", "string", "estado", "string"), ("nascimento", "string", "nascimento", "string"), ("peso", "int", "peso", "int")]]
 ## @return: applymapping
