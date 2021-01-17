@@ -17,6 +17,10 @@ Este código fonte se refere a este artigo [TODO: link do artigo]
 
 - Para importar um script ao criar um job no AWS Glue, visite a [documentação](https://docs.aws.amazon.com/pt_br/glue/latest/dg/add-job.html)
 
+3\. Arquivo .CSV de exemplo
+
+- Um arquivo .CSV de exemplo para uso simulando a origem dos dados por ser obtido [aqui](pacientes-raw.csv) 
+
 
 ## Security
 
