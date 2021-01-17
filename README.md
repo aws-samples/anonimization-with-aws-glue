@@ -1,11 +1,20 @@
-## My Project
+## Anonimization with AWS Glue
 
-TODO: Fill this README out!
 
-Be sure to:
 
-* Change the title in this README
-* Edit your repository description on GitHub
+1. English
+
+The source code is better understood after reading this [article](TODO: link do artigo)
+
+For the English version of the source code, click [here](english/README.md)
+
+2\. Portuguese 
+
+Este código fonte é melhor compreendido após a leitura deste [artigo](TODO: link do artigo)
+
+Para ver o código fonte em Português, clique [aqui](portuguese/README.md)
+
+
 
 ## Security
 
