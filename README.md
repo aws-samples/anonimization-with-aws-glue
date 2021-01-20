@@ -1,19 +1,24 @@
-## Anonimization with AWS Glue
+## Anonimização com AWS Glue
 
+Este código fonte se refere a este artigo [TODO: link do artigo]
 
+1. Notebook Jupyter com todo o script para testes:
 
-1. English
+    - [Notebook Jupyter](/portuguese/Anonimizacao.ipynb)
 
-The source code is better understood after reading this [article](TODO: link do artigo)
+    - Para executar o notebook, você precisará de um Glue Developer Endpoint. Mais informações em: [Glue Developer Endpoint](https://docs.aws.amazon.com/pt_br/glue/latest/dg/dev-endpoint.html)
 
-For the English version of the source code, click [here](english/README.md)
+    - Development Endpoints do Glue tem custo. Para mais informações: [Preço do developer endpoint do Glue](https://aws.amazon.com/pt/glue/pricing/)
 
-2\. Portuguese 
+2. Script a ser importado no job do AWS Glue:
 
-Este código fonte é melhor compreendido após a leitura deste [artigo](TODO: link do artigo)
+    - [Script em Pyspark](/portuguese/script-glue.py)
 
-Para ver o código fonte em Português, clique [aqui](portuguese/README.md)
+    - Para importar um script ao criar um job no AWS Glue, visite a [documentação](https://docs.aws.amazon.com/pt_br/glue/latest/dg/add-job.html)
 
+3. Arquivo .CSV de exemplo
+
+    - Um arquivo .CSV de exemplo para uso simulando a origem dos dados por ser obtido [aqui](/portuguese/pacientes-raw.csv) 
 
 
 ## Security
