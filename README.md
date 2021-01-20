@@ -8,7 +8,7 @@ Este código fonte se refere a este artigo [TODO: link do artigo]
 
     - Para executar o notebook, você precisará de um Glue Development Endpoint. Mais informações em: [Glue Development Endpoint](https://docs.aws.amazon.com/pt_br/glue/latest/dg/dev-endpoint.html)
 
-    - Development Endpoints do Glue tem custo. Para mais informações: [Preço do developer endpoint do Glue](https://aws.amazon.com/pt/glue/pricing/)
+    - Development Endpoints do Glue tem custo. Para mais informações: [Preço do development endpoint do Glue](https://aws.amazon.com/pt/glue/pricing/)
 
 2. Script a ser importado no job do AWS Glue:
 
