@@ -1,6 +1,6 @@
 ## Anonimização com AWS Glue
 
-Este código fonte se refere a este artigo [TODO: link do artigo]
+Este código fonte se refere a este [artigo](https://aws.amazon.com/pt/blogs/aws-brasil/como-anonimizar-seus-dados-usando-o-aws-glue/)
 
 1. Notebook Jupyter com todo o script para testes:
 
