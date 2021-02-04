@@ -123,4 +123,3 @@ glueContext.write_dynamic_frame.from_options(frame = cpfHasheado,
                                              connection_type = "s3", 
                                              connection_options = {"path": s3_output_path},
                                              format = "parquet")
-job.commit()
